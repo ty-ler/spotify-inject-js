@@ -2,9 +2,11 @@
 
 ## Background
 
-Spotify's Desktop client is essentially a large chromium window. Each "app" (page, usually) in Spotify is an `.spa` file located within the Apps folder in your Spotify installation directory. These .spa files are really just zipped up folders containing the apps resources and minified JavaScript code. 
+Spotify used to have an official feature for installing custom third-party applications such as lyric or radio apps. After a large UI rework, these third-party apps were removed. 
 
-Spotify used to have an official feature for installing custom third-party applications such as lyric or radio apps. After a large UI rework, these third-party apps were removed. This project is mostly for research into how Spotify is developed and also the security of Chromium-based hybrid applications. 
+Spotify's Desktop client is essentially a large chromium window. Each "app" (page, usually) in Spotify is an `.spa` file located within the Apps folder in your Spotify installation directory. These .spa files are really just zipped up folders containing the apps resources and minified JavaScript code. According to [a former Spotfiy Engineer](https://www.quora.com/How-is-JavaScript-used-within-the-Spotify-desktop-application-Is-it-packaged-up-and-run-locally-only-retrieving-the-assets-as-and-when-needed-What-JavaScript-VM-is-used), these .spa files are rendered into iframes. This is so that engineers from different teams can use any framework or version they choose to. I am interested in the effectivness of development approach and its toll on overall performance.
+
+This project is mostly for research into how Spotify is developed and also the state of security of Chromium-based hybrid applications. 
 
 ## Method
 
